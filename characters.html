@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" rel="stylesheet">
+   <link rel="icon" type="image/png" href="./images/logo.png" >
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Beth+Ellen&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="./style/style.css">
+   <link rel="stylesheet" href="./css/bootstrap.css">
+
+   <title>Головні персонажі</title>
+</head>
+<body>
+   <header class="header">
+      <a href="./index.html">
+         <img class="logo" src="./images/logo.png" alt="logo">
+      </a>
+      <div class="container-head">
+         <div class="row justify-content-center">
+            <ul class="nav">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="./index.html">Головна</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="./martin.html">Джордж Мартін</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="./characters.html">Головні персонажі</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="./gallery.html">Галерея</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="./about_autor.html">Про автора</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <h1 class="title_text"> Головні герої циклу «Пісня льоду і полум'я»</h1>
+      <div class="main_text">
+         <p>У складному та безжальному світі Вестероса, створеному Джорджем Мартіном, кожен персонаж відіграє унікальну роль у великій грі за владу, виживання та справедливість. Від королів і лицарів до шпигунів та магів — герої «Пісні льоду і полум'я» є багатогранними особистостями, у кожного з яких свої слабкості, амбіції та секрети. Саме ці персонажі роблять історію живою та змушують читачів переживати за кожен їхній крок.</p>
+      </div>
+
+      <h1 class="title2_text">Едард «Нед» Старк</h1>
+      <div class="character-card">
+         <img class="character-image" src="./images/Ned_Stark1.jpg" alt="Нед Старк">
+         <div class="character-info">
+            <ul>
+               <li>
+                  <p>Рід: Старки з Вінтерфеллу</p>
+               </li>
+               <li>
+                  <p>Роль: Лорд Вінтерфеллу та Хранитель Півночі</p>
+               </li>
+            </ul>
+            <p>Взірець честі й вірності, який намагається зберігати моральні принципи навіть у світі інтриг. Як глава дому Старків, він є взірцем для своїх дітей і підтримує суворі правила Півночі. Нед відчуває внутрішній конфлікт, опинившись у столиці, де відбувається багато брудних політичних інтриг. Його чесність стає як силою, так і слабкістю, що призводить до трагічних наслідків.</p>
+            <button class="btn-more" onclick="toggleDetails1()">Детальніше</button>
+            <p id="ned" class="hidden ">
+               Нед народився у Вінтерфеллі, стародавньому замку, який вважається серцем Півночі. Він був другим сином лорда Рікара Старка і мав двох братів — Брандона та Бенджена, а також сестру Ліанну. Після смерті батька і старшого брата, які загинули через жорстокість короля Аєріса II (Божевільного Короля), Нед став лордом Вінтерфеллу.
+               Він одружився з Кетлін Таллі, шлюб з якою був політичним союзом, але з часом перетворився на міцні й теплі стосунки. Разом вони виховали п'ятьох дітей: Робба, Сансу, Арію, Брана і Рікона. Окрім цього, Нед привів у дім свого незаконнонародженого сина Джона Сноу, що стало джерелом напруженості у відносинах з Кетлін.
+            </p>
+         </div>
+      </div>
+
+      <h1 class="title2_text">Серсея Ланістер</h1>
+      <div class="character-card">
+         <img class="character-image" src="./images/Cersei_Lannister.jpg" alt="Серсея Ланістер">
+         <div class="character-info">
+            <ul>
+               <li>
+                  <p>Рід: Ланністери з Кастерлі-Року</p>
+               </li>
+               <li>
+                  <p>Роль: Королева Семи Королівств</p>
+               </li>
+            </ul>
+            <p>Яскрава, амбітна та небезпечна жінка, чия краса рівна лише її хитрості та здатності маніпулювати іншими. Як дочка могутнього Тайвіна Ланністера, вона з дитинства звикла до розкішного життя і до боротьби за владу. Серсея бачить себе спадкоємицею сили і впливу Ланністерів, вважаючи, що її місце – на вершині світу, незалежно від засобів, якими цього доведеться досягти.</p>
+            <button class="btn-more" onclick="toggleDetails2()">Детальніше</button>
+            <p id="serse" class="hidden ">
+               Її роль як королеви дружини Роберта Баратеона принесла їй статус, але не щастя. Її шлюб із Робертом був позбавлений любові, і вона довгі роки зневажала свого чоловіка, зберігаючи при цьому небезпечну таємницю – її діти були народжені від її брата Джеймі. Серсея – матір, готова на все, щоб захистити своїх дітей і забезпечити їм трон, навіть якщо це вимагатиме зради, інтриг чи вбивств.
+               Проте її жага до влади часто затьмарює її розум. Серсея вірить, що всі навколо – її вороги, і її параноїдальна недовіра призводить до руйнівних наслідків. Вона майстерно веде інтриги, але часом її гординя і імпульсивність стають її слабкими місцями, через які її плани розвалюються. Серсея – уособлення амбівалентності: водночас велична і трагічна, вона викликає як захоплення, так і страх.
+            </p>
+         </div>
+      </div>
+
+      <h1 class="title2_text">Джон Сноу</h1>
+      <div class="character-card">
+         <img class="character-image" src="./images/Jon_Snow.jpg" alt="Джон Сноу">
+         <div class="character-info">
+            <ul>
+               <li>
+                  <p>Рід: Сноу (незаконнонароджений син лорда Едарда Старка)</p>
+               </li>
+               <li>
+                  <p>Роль: Лідер Нічної Варті, Хранитель Стіни, Потім король Півночі</p>
+               </li>
+            </ul>
+            <p>Джон Сноу є символом честі, мужності та відданості обов’язку. Як незаконнонароджений син Едарда Старка, він з дитинства стикався з відчуженістю та внутрішньою боротьбою. Джон виріс у Вінтерфеллі поряд із законними дітьми Старка, але завжди відчував тінь свого походження. Попри це, він перейняв від Неда високі моральні принципи й прагнення до справедливості.</p>
+            <button class="btn-more" onclick="toggleDetails3()">Детальніше</button>
+            <p id="djon" class="hidden ">
+               Розуміючи, що на Півночі мало місця для бастарда, Джон вирішує присвятити своє життя службі в Нічній Варті. У Чорному Замку він знаходить братів за обітницею і зіштовхується з викликами, які загартовують його характер. З часом Джон стає лідером, якому довіряють навіть найскептичніші воїни. Його рішення часто вимагають від нього жертв, але він завжди ставить потреби інших вище за власні бажання.
+               Джон неодноразово опиняється перед важкими виборами між обов'язком і почуттями, між традиціями і новим баченням майбутнього. Його глибоке розуміння честі і непохитна рішучість зробили його ключовою фігурою в боротьбі за майбутнє Вестероса, навіть якщо він сам не прагнув слави чи влади.            </p>
+         </div>
+      </div>
+
+   </main>
+
+   <footer class="footer">
+      <h1 class="text_footer">Game Of Thrones</h1>
+      <h1 class="text_footer">Соціальні мережі</h1>
+      <div class="social-media">
+         <a href="https://www.instagram.com/gameofthrones?igsh=eGQyYWZxcXRyenQw" target="_blank">
+            <img class="social" src="./images/instagram.svg" alt="Instagram">
+         </a>
+         <a href="https://www.facebook.com/share/1KQ5oCGBzS/?mibextid=LQQJ4d" target="_blank">
+            <img class="social" src="./images/facebook.svg" alt="Facebook">
+         </a>
+         <a href="https://www.youtube.com/@gameofthrones" target="_blank">
+            <img class="social" src="./images/youtube.svg" alt="YouTube">
+         </a>
+      </div>
+      <p class="text_footer">by Turetska Natalia</p>
+   </footer>
+
+   <script src="./js/characters.js"></script>
+   <script src="./js/nav.js"></script>
+   <script src="./js/bootstrap.js"> </script>
+
+
+</body>
+</html>
+

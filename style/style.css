@@ -1,0 +1,298 @@
+html, body {
+   overflow-x: hidden;
+   margin: 0;
+   padding: 0;
+}
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   margin: 0;
+   background-color: #dde9e3;
+
+}
+.main_text{
+   font-family: 'Merriweather', serif; 
+   font-size: 1.1rem; 
+   color: #555; 
+   line-height: 1.8;
+   max-width: 1000px; 
+   margin: 0 auto; 
+   padding: 20px; 
+   background-color: #f9f9f9; 
+   border-radius: 10px; 
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   margin-bottom: 10px;
+}
+
+.title_text {
+   margin-top: 95px;
+   text-align: center;
+   font-family: "Playfair Display", serif;
+}
+.title2_text{
+   margin-top: 35px;
+   text-align: center;
+   font-family: "Playfair Display", serif;
+   border-top: 3px solid #7a9688;
+   margin-top: 10px ;
+}
+
+/* #region Навігація */
+.header {
+   background-color:#bacfc56d;
+   display: flex;
+   box-sizing: border-box;
+   height: 15vh;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   width: 100%;
+   transition: top 0.3s;
+   z-index: 1000;
+}
+.nav {
+   display: flex;
+   list-style-type: none; 
+   padding-left: 0;
+}
+.nav-link {
+   color:  #000000!important; 
+   text-decoration: none;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-link:hover {
+   color: #7a9688b5 !important;
+   text-decoration: underline;
+
+}
+.nav-item {
+   margin-right: 20px;
+}
+
+.logo {
+   margin-top: 9px;
+   margin-left: 9px;
+   height: 78px;
+}
+/* #endregion */
+
+/* #region footer */
+.text_footer{
+   margin-top: 0px;
+   font-size: 20px;
+   margin-bottom: 1px;
+
+}
+.social-media {
+   margin-top: 0;
+   display: flex; 
+   justify-content: center; 
+   gap: 15px; 
+   margin-top: 10px;
+}
+
+.social{
+   width: 35px;
+   height: 35px;
+}
+.footer {
+   background-color: #bacfc56d;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-sizing: border-box;
+   height: auto; 
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   z-index: 1000;
+   padding: 20px 40px; 
+   background: #bacfc56d; 
+   border-top: 1px solid #7a9688b5; 
+   text-align: center;
+   align-items: center;
+   flex-direction: column;
+
+}
+/* #endregion */
+
+/* #region Головна сторінка */
+.main_ind {
+   scroll-behavior: smooth;
+   overflow: hidden;
+}
+
+.head_text{
+   color: #fff;
+   font-family: 'Playwrite GB S', serif;
+   font-weight: 700;
+   font-size: 35px;
+}
+.main_page{
+   background-image: url("../images/fon.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center; 
+   height: 100vh;
+   display: flex; 
+   justify-content: center; 
+   align-items: center;
+   text-align: center;
+}
+.main_nav{
+   background-color: rgba(7, 2, 27, 0.271); 
+   border-radius: 10px; 
+}
+.main_nav nav a {
+   color: #fff; 
+   text-decoration: none; 
+   font-size: 1.2rem; 
+   margin: 0 10px; 
+   font-weight: 400;
+}
+.main_nav nav a:hover {
+   text-decoration: underline;
+}
+/* #endregion */
+
+/* #region Джордж Мартін */
+.photo_m {
+   padding-left:  15px;
+   height: 470px;
+   width: 545px;
+   border-radius: 40px;
+   margin: 30px auto;
+   display: block;
+}
+.quote {
+   font-family: "Playfair Display", serif; 
+   font-style: italic;
+   font-size: 1.2rem;
+   color: #555; 
+   margin: 30px auto; 
+   max-width: 700px; 
+   padding: 5px;
+   border-left: 5px solid #7a9688;
+   background-color: #f9f9f9;
+   border-radius: 10px; 
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.vide {
+   text-align: center;
+   display: block;
+   margin: 30px auto;
+   border-radius: 15px;
+}
+/* #endregion */
+
+/* #region Галерея */
+#lightgallery {
+   column-count: 4; 
+   column-gap: 8px; 
+   max-width: 1200px; 
+   margin: 50px auto; 
+}
+
+#lightgallery a {
+   display: inline-block;
+   margin-bottom: 4px; 
+}
+
+#lightgallery img {
+   width: 100%;
+   display: block;
+   border-radius: 3px;
+   transition: transform 0.3s ease;
+}
+
+#lightgallery img:hover {
+   transform: scale(1.2);
+}
+/* #endregion */
+
+.character-card {
+   display: flex; 
+   gap: 20px; /* Проміжок між зображенням та текстом */
+   align-items: flex-start; 
+   max-width: 900px; 
+   margin: 0 auto; 
+   padding: 20px;
+   background-color: #f9f9f9;
+   border-radius: 10px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.character-image {
+   width: 250px; 
+   height: auto; 
+   border-radius: 10px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.character-info {
+   font-family: 'Merriweather', serif;
+   font-size: 1rem;
+   color: #555;
+   line-height: 1.8;
+}
+
+.btn-more {
+   margin-top: 1rem;
+   padding: 0.5rem 1rem;
+   background-color: #7a9688;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 1rem;
+   transition: background-color 0.3s;
+}
+
+.btn-more:hover {
+   background-color: #dde9e3;
+}
+
+.hidden {
+   display: none;
+}
+
+.photo_autor {
+   display: block;
+   margin: 110px auto 0; 
+   width: 250px; 
+   border-radius: 10px;
+   transition: transform 0.3s ease;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+.photo_autor:hover {
+   transform: scale(1.1); 
+}
+.maps{
+   display: block;
+   text-align: center;
+}
+.map{
+   width: 620px;
+   height: 250px;
+   border-radius: 10%;
+   border: 1px solid #333;
+   margin-top: 10px;
+}
+.music{
+   display: block;
+   text-align: center;
+}
+.music_1{
+   height: 45px;
+   border: 1px solid #7a9688; /* Рамка плеєра */
+   border-radius: 21px; /* Закруглені кути */
+   outline: none; /* Видалення обведення при фокусі */
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.music_1:hover {
+   transform: scale(1.05); /* Невелике збільшення */
+   transition: transform 0.2s ease-in-out; /* Плавність переходу */
+   border-color: #555; /* Темніша рамка при наведенні */
+}
