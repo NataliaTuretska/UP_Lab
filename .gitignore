@@ -8,9 +8,12 @@ Thumbs.db
 # env
 .env
 
-# node 
+# node
 node_modules/
 
 # build
 dist/
 build/
+coverage/
+playwright-report/
+test-results/
