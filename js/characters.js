@@ -1,26 +1,23 @@
-function toggleDetails1() {
-   const additionalText = document.getElementById('ned');
-   if (additionalText.classList.contains('hidden')) {
-      additionalText.classList.remove('hidden');
-   } else {
-      additionalText.classList.add('hidden');
-   }
+export function toggleDetailsById(id) {
+  const element = document.getElementById(id);
+
+  if (!element) {
+    return false;
+  }
+
+  element.classList.toggle('hidden');
+  return true;
 }
 
-function toggleDetails2() {
-   const additionalText = document.getElementById('serse');
-   if (additionalText.classList.contains('hidden')) {
-      additionalText.classList.remove('hidden');
-   } else {
-      additionalText.classList.add('hidden');
-   }
-}
+// для кнопок на сайті
+window.toggleDetails1 = function () {
+  toggleDetailsById('ned');
+};
 
-function toggleDetails3() {
-   const additionalText = document.getElementById('djon');
-   if (additionalText.classList.contains('hidden')) {
-      additionalText.classList.remove('hidden');
-   } else {
-      additionalText.classList.add('hidden');
-   }
-}
+window.toggleDetails2 = function () {
+  toggleDetailsById('serse');
+};
+
+window.toggleDetails3 = function () {
+  toggleDetailsById('djon');
+};
