@@ -1,3 +1,4 @@
+[![CI/CD Pipeline](https://github.com/NataliaTuretska/UP_Lab/actions/workflows/main.yml/badge.svg)](https://github.com/NataliaTuretska/UP_Lab/actions/workflows/main.yml)
 # Game of Thrones Website
 
 ## Опис
