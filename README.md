@@ -30,3 +30,4 @@
 
 ## Мета роботи
 Опанування роботи з Git, GitHub, гілками, Pull Request та merge conflicts.
+https://up-i5j6fylhe-nataliaturetskas-projects.vercel.app/
