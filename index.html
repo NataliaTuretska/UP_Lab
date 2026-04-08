@@ -3,31 +3,61 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" type="image/png" href="./images/logo.png" >
+   <title>Гра Престолів</title>
+
+   <!-- 🔥 SENTRY (правильний CDN) -->
+   <script src="https://browser.sentry-cdn.com/7.116.0/bundle.min.js" crossorigin="anonymous"></script>
+   <script>
+      Sentry.init({
+         dsn: "https://6ee07bd11296bec96a58ced857be6168@4511186367873024.ingest.de.sentry.io/4511186368004096",
+         sendDefaultPii: true,
+         environment: "development"
+      });
+   </script>
+
+   <!-- 🔥 POSTHOG -->
+   <script src="https://eu.posthog.com/static/array.js"></script>
+   <script>
+      posthog.init('phc_sJEtmebELy24euWvaUXT38hhfhQwJbSCsW64Hw5mr7Ra', {
+         api_host: 'https://eu.posthog.com'
+      });
+   </script>
+
+   <!-- Styles -->
+   <link rel="icon" type="image/png" href="./images/logo.png">
    <link rel="stylesheet" href="./style/style.css">
 
+   <!-- Fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Beth+Ellen&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
-
-   <title>Гра Престолів</title>
 </head>
-<script src="https://eu.posthog.com/static/array.js"></script>
-<script>
-  posthog.init('phc_sJEtmebELy24euWvaUXT38hhfhQwJbSCsW64Hw5mr7Ra', {
-    api_host: 'https://eu.posthog.com'
-  });
-</script>
+
 <body class="main_page" id="main_page">
+
    <div class="main_nav">
       <h1 class="head_text">Game Of Thrones</h1>
-         <nav>
-            <a href="./martin.html">Джордж Мартін</a>
-            <a href="./characters.html">Головні персонажі</a>
-            <a href="./gallery.html">Галерея</a>
-            <a href="./about_autor.html">Про автора</a>
-         </nav>
+
+      <nav>
+         <a href="./martin.html">Джордж Мартін</a>
+         <a href="./characters.html">Головні персонажі</a>
+         <a href="./gallery.html">Галерея</a>
+         <a href="./about_autor.html">Про автора</a>
+      </nav>
+
+      <!-- 🔥 КНОПКА ДЛЯ ТЕСТУ -->
+      <button onclick="throwError()">Break the world</button>
    </div>
+
+   <!-- Твій JS -->
    <script type="module" src="./js/env.js"></script>
+
+   <!-- 🔥 ПОМИЛКА ДЛЯ SENTRY -->
+   <script>
+      function throwError() {
+         throw new Error("Sentry Test Error: Something went wrong!");
+      }
+   </script>
+
 </body>
 </html>

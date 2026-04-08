@@ -20,3 +20,14 @@ window.addEventListener('scroll', function () {
 
   lastScroll = updateHeaderOnScroll(header, currentScroll, lastScroll);
 });
+
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', function () {
+    posthog.capture('nav_click', {
+      menu_item: link.textContent.trim(),
+      target_page: link.getAttribute('href')
+    });
+  });
+});

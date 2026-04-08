@@ -15,10 +15,12 @@
 
    <title>Головні персонажі</title>
 </head>
+<script src="https://eu.posthog.com/static/array.js"></script>
 <script>
   posthog.init('phc_sJEtmebELy24euWvaUXT38hhfhQwJbSCsW64Hw5mr7Ra', {
     api_host: 'https://eu.posthog.com'
   });
+</script>
 </script>
 <body>
    <header class="header">
@@ -53,7 +55,7 @@
                <li><p>Роль: Лорд Вінтерфеллу та Хранитель Півночі</p></li>
             </ul>
             <p>Взірець честі й вірності, який намагається зберігати моральні принципи навіть у світі інтриг.</p>
-            <button class="btn-more" onclick="toggleDetails1()">Детальніше</button>
+            <button class="btn-more" onclick="toggleDetails1(); posthog.capture('character_opened', {character_id: 'ned'})">Детальніше</button>
             <p id="ned" class="hidden">
                Нед народився у Вінтерфеллі, стародавньому замку, який вважається серцем Півночі.
             </p>
@@ -69,7 +71,7 @@
                <li><p>Роль: Королева Семи Королівств</p></li>
             </ul>
             <p>Яскрава, амбітна та небезпечна жінка, чия краса рівна лише її хитрості.</p>
-            <button class="btn-more" onclick="toggleDetails2()">Детальніше</button>
+            <button class="btn-more" onclick="toggleDetails2(); posthog.capture('character_opened', {character_id: 'serse'})">Детальніше</button>
             <p id="serse" class="hidden">
                Її роль як королеви дружини Роберта Баратеона принесла їй статус, але не щастя.
             </p>
@@ -85,7 +87,7 @@
                <li><p>Роль: Лідер Нічної Варті</p></li>
             </ul>
             <p>Джон Сноу є символом честі, мужності та відданості обов’язку.</p>
-            <button class="btn-more" onclick="toggleDetails3()">Детальніше</button>
+            <button class="btn-more" onclick="toggleDetails3(); posthog.capture('character_opened', {character_id: 'djon'})">Детальніше</button>
             <p id="djon" class="hidden">
                Джон вирішує присвятити своє життя службі в Нічній Варті.
             </p>
