@@ -10,7 +10,6 @@ export function updateHeaderOnScroll(header, scrollTop, lastScrollTop) {
   return scrollTop;
 }
 
-// для реального сайту
 const header = document.querySelector('.header');
 let lastScroll = 0;
 
@@ -25,9 +24,11 @@ const navLinks = document.querySelectorAll('nav a');
 
 navLinks.forEach((link) => {
   link.addEventListener('click', function () {
-    posthog.capture('nav_click', {
-      menu_item: link.textContent.trim(),
-      target_page: link.getAttribute('href')
-    });
+    if (typeof window !== 'undefined' && window.posthog) {
+      window.posthog.capture('nav_click', {
+        menu_item: link.textContent.trim(),
+        target_page: link.getAttribute('href')
+      });
+    }
   });
 });
