@@ -5,22 +5,24 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Гра Престолів</title>
 
-   <!-- 🔥 SENTRY (правильний CDN) -->
+   <!-- ✅ SENTRY -->
    <script src="https://browser.sentry-cdn.com/7.116.0/bundle.min.js" crossorigin="anonymous"></script>
    <script>
       Sentry.init({
          dsn: "https://6ee07bd11296bec96a58ced857be6168@4511186367873024.ingest.de.sentry.io/4511186368004096",
-         sendDefaultPii: true,
+         tracesSampleRate: 1.0,
          environment: "development"
       });
    </script>
 
-   <!-- 🔥 POSTHOG -->
+   <!-- ✅ POSTHOG -->
    <script src="https://eu.posthog.com/static/array.js"></script>
    <script>
-      posthog.init('phc_sJEtmebELy24euWvaUXT38hhfhQwJbSCsW64Hw5mr7Ra', {
-         api_host: 'https://eu.posthog.com'
-      });
+      if (typeof window !== 'undefined' && window.posthog) {
+         window.posthog.init('phc_sJEtmebELy24euWvaUXT38hhfhQwJbSCsW64Hw5mr7Ra', {
+            api_host: 'https://eu.posthog.com'
+         });
+      }
    </script>
 
    <!-- Styles -->
@@ -45,14 +47,14 @@
          <a href="./about_autor.html">Про автора</a>
       </nav>
 
-      <!-- 🔥 КНОПКА ДЛЯ ТЕСТУ -->
+      <!-- ТЕСТ ПОМИЛКИ -->
       <button onclick="throwError()">Break the world</button>
    </div>
 
    <!-- Твій JS -->
    <script type="module" src="./js/env.js"></script>
 
-   <!-- 🔥 ПОМИЛКА ДЛЯ SENTRY -->
+   <!-- Тест помилки -->
    <script>
       function throwError() {
          throw new Error("Sentry Test Error: Something went wrong!");
