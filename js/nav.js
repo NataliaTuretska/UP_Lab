@@ -1,7 +1,7 @@
 import * as Sentry from '@sentry/browser';
 
 Sentry.init({
-  dsn: import.meta.env.VITE_SENTRY_DSN,
+  dsn: "https://6ee07bd11296bec96a58ced857be6168@o4511186367873024.ingest.de.sentry.io/4511186389958736",
   tracesSampleRate: 1.0,
   environment: 'development',
 });
